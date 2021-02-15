@@ -1,0 +1,55 @@
+#friends-display-link {
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  margin-top: -15px;
+}
+#friends-display-link i {
+  color: var(--grey02);
+  margin-right: 4px;
+}
+.friends-screen {
+  padding: 0 var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: -20px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey05);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* display:none은 마우스에 걸림 위에거는 마우스에 안 걸림! still in html*/
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  /*father is body*/
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  /*forwards 는 last key frame을 기억하게 해줌*/
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1.5s;
+}

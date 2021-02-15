@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <style>
+      div {
+        width: 150px;
+        height: 50px;
+        background-color: tomato;
+        animation: goaround 1s ease-in infinite;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @keyframes goaround {
+        0% {
+          transform: rotate(0);
+        }
+        50%,
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+  </body>
+</html>

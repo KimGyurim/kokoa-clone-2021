@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <style>
+      body {
+        background-color: cadetblue;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      #circle > div {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+      #box > div {
+        width: 15px;
+        height: 80px;
+      }
+      div div {
+        background-color: white;
+      }
+      body > div {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @keyframes goaround {
+        0% {
+          transform: rotate(0);
+        }
+        50%,
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+      #circle {
+        animation: goaround 1s ease-in infinite;
+      }
+      @keyframes wave {
+        0%,
+        50% {
+          transform: scaleY(1);
+        }
+        80% {
+          transform: scaleY(2);
+        }
+      }
+      #box > div:first-child {
+        animation: wave 1s ease-in-out infinite;
+        animation-delay: 0.1s;
+      }
+      #box > div:nth-child(2) {
+        animation: wave 1s ease-in-out infinite;
+        animation-delay: 0.2s;
+      }
+      #box > div:nth-child(3) {
+        animation: wave 1s ease-in-out infinite;
+        animation-delay: 0.3s;
+      }
+      #box > div:nth-child(4) {
+        animation: wave 1s ease-in-out infinite;
+        animation-delay: 0.4s;
+      }
+      #box > div:last-child {
+        animation: wave 1s ease-in-out infinite;
+        animation-delay: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="circle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

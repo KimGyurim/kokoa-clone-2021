@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  color: #2e2050;
+}
+
+.screen {
+  width: 275px;
+  height: 585px;
+  background-color: #f5f4ff;
+  border-radius: 20px;
+  margin: 50px;
+  box-shadow: 5px 5px 10px #f7f7f8, -5px -5px 10px #f7f7f8;
+  padding: 30px 20px 12px 20px;
+}
+
+.screen-header {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.singer-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singer-profile img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 35px;
+  box-shadow: 0px 8px 15px #aea5f3;
+}
+.singer-profile__name {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.singer-profile__janre {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #a5a0d3;
+}
+
+.playlist-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+.playlist-btn__shuffle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: #2e2050;
+  color: #f5f4ff;
+}
+.playlist-btn__like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 8px #e6e4fd;
+  padding: 0 15px;
+}
+.playlist-btn__like span {
+  color: #a5a0d3;
+}
+
+.playlist {
+  margin-top: 20px;
+}
+.playlist__song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+.playlist__album {
+  display: flex;
+}
+.playlist__album-cover {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.playlist__album-text {
+  width: 100px;
+  margin-left: 15px;
+}
+.playlist__singer {
+  font-size: 9px;
+}
+.playlist__song-name {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.playlist__song i {
+  color: #a5a0d3;
+}
+.playlist__song--now {
+  box-shadow: 1px 1px 8px #e6e4fd;
+}
+
+.play-bar {
+  background-color: #2e2050;
+  padding: 15px 20px;
+  border-radius: 50px;
+  color: #f5f4ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 8px #aea5f3;
+}
+.play-bar__singer {
+  color: #a5a0d3;
+  font-size: 6px;
+  font-weight: bold;
+}
+.play-bar__song-name {
+  margin-top: 5px;
+  width: 100px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.play-bar__icons {
+  width: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playing-cover {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.playing-cover img {
+  width: 195px;
+  height: 195px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px #aea5f3;
+}
+.playing-text__song-name {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.playing-text__singer {
+  margin-top: 20px;
+  font-size: 10px;
+  text-align: center;
+  color: #a5a0d3;
+}
+
+.playing-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a5a0d3;
+}
+.playing-status__sec {
+  margin-top: 30px;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 6px;
+}
+.playing-status__range {
+  margin-top: 10px;
+  width: 100%;
+  height: 3px;
+  -webkit-appearance: none;
+  background: #e4e3f4;
+  outline: none;
+  border-radius: 1.5px;
+}
+.playing-status__range::-webkit-slider-runnable-track {
+  color: #13bba4;
+}
+.playing-status__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2e2050;
+}
+
+.playing-btns {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playing-btns i:first-child,
+.playing-btns i:last-child {
+  color: #a5a0d3;
+}
+
+.playing-btns i:nth-child(3) {
+  border-radius: 50%;
+  box-shadow: 0px 2px 8px #aea5f3;
+}

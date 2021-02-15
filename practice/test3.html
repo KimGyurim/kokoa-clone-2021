@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2,
+      h3 {
+        position: relative;
+        top: 10px;
+        left: 10px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 13px;
+      }
+      body {
+        background-color: gainsboro;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .twobox {
+        width: 330px;
+        height: 280px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 20px;
+      }
+      .twobox > div {
+        width: 150px;
+        height: 250px;
+        border: 4px solid white;
+      }
+      .twobox > div > div {
+        width: 150px;
+        height: 100px;
+        background-color: white;
+      }
+      .frst > div:first-child {
+        background-color: tomato;
+      }
+      .frst > div:nth-child(2) {
+        background-color: teal;
+      }
+      .scnd > div:first-child {
+        background-color: burlywood;
+      }
+      .scnd > div:nth-child(2) {
+        background-color: thistle;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>The Best Colors</h1>
+      <div class="twobox frst">
+        <div>
+          <div>
+            <h2>Tomato</h2>
+            <h3>#FF6347</h3>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h2>Teal</h2>
+            <h3>#008080</h3>
+          </div>
+        </div>
+      </div>
+      <div class="twobox scnd">
+        <div>
+          <div>
+            <h2>Burlywood</h2>
+            <h3>#DEB887</h3>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h2>Thistle</h2>
+            <h3>#D7BFD7</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
